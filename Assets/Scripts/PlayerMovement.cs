@@ -28,12 +28,12 @@ public class PlayerMovement : MonoBehaviour {
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-		// if (horizontalMove > 0 || horizontalMove < 0) {
-		// 	myAnimator.SetBool("isRunning", true);
-		// }
-		// else {
-		// 	myAnimator.SetBool("isRunning", false);
-		// }
+		if (horizontalMove > 0 || horizontalMove < 0) {
+			myAnimator.SetBool("isWalking", true);
+		}
+		else {
+			myAnimator.SetBool("isWalking", false);
+		}
 
 		if (Input.GetButtonDown("Jump"))
 			{
