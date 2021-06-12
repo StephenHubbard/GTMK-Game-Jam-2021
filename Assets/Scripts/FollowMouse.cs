@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
-
     public float offset;
     private CharacterController2D characterController2D;
 

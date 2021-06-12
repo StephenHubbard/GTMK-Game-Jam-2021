@@ -7,23 +7,31 @@ public class MagicWand : MonoBehaviour
     [SerializeField] private GameObject lightWorld;
     [SerializeField] private GameObject darkWorld;
     [SerializeField] private GameObject betweenWorlds;
+    [SerializeField] private Transform vfxSpawnPoint;
+    [SerializeField] private GameObject wandVFX;
 
-    // public float offset;
-
-    private GameObject heldGameObject;
+    public GameObject heldGameObject;
     private CharacterController2D characterController2D;
+
+    private GameObject wandEffect;
 
     private void Awake() {
         characterController2D = FindObjectOfType<PlayerMovement>().GetComponent<CharacterController2D>();
     }
 
     private void Update() {
-        // FollowMouse();
     }
 
     public void SetHeldGameObject(GameObject go) {
         heldGameObject = go;
         heldGameObject.transform.parent = betweenWorlds.transform;
+        wandEffect = Instantiate(wandVFX, vfxSpawnPoint.position, transform.rotation);
+        wandEffect.transform.parent = gameObject.transform;
+
+        if (!characterController2D.m_FacingRight) {
+            var particleShape = wandEffect.GetComponent<ParticleSystem>().shape;
+            particleShape.alignToDirection = true;
+        }
     }
 
     public void WandRelease() {
@@ -33,22 +41,9 @@ public class MagicWand : MonoBehaviour
         else {
             heldGameObject.transform.parent = darkWorld.transform;
         }
+
+        heldGameObject = null;
+        Destroy(wandEffect);
     }
 
-    // private void FollowMouse()
-    // {
-    //     if (characterController2D.m_FacingRight)
-    //     {
-    //     offset = 0f;
-    //     }
-    //     else
-    //     {
-    //     offset = 180f;
-    //     }
-
-    //     Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-    //     float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-    //     transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
-
-    // }
 }

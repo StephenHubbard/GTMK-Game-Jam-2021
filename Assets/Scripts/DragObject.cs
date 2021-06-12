@@ -33,7 +33,7 @@ public class DragObject : MonoBehaviour
 
     private void RotateObject() {
         if (isPickedUp == false) { return; }
-        
+
         transform.Rotate(0f, 0f, 30f * Time.deltaTime, Space.Self);
     }
 
@@ -52,6 +52,10 @@ public class DragObject : MonoBehaviour
     }
 
     void OnMouseUp() {
+        Vector3 mousePos;
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        transform.position = new Vector3(mousePos.x - startPosx, mousePos.y - startPosy, 0);
         FindObjectOfType<MagicWand>().WandRelease();
         rb.velocity = new Vector2(0f, 0f);
         myCollider.enabled = true;

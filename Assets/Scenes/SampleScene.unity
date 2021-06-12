@@ -788,6 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 539011191}
+  - component: {fileID: 539011192}
   m_Layer: 0
   m_Name: WandParent
   m_TagString: Untagged
@@ -810,6 +811,19 @@ Transform:
   m_Father: {fileID: 520948458}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 47.638}
+--- !u!114 &539011192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539011190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fab44883fba0afe4b831042eaa858c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0
 --- !u!1 &592501548
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,7 +852,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.02152451, w: 0.9997684}
   m_LocalPosition: {x: 0.77, y: -0.039, z: 0}
   m_LocalScale: {x: 1.28763, y: 1.28763, z: 1.28763}
-  m_Children: []
+  m_Children:
+  - {fileID: 1945194919}
   m_Father: {fileID: 539011191}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.467}
@@ -881,7 +896,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1916135455
   m_SortingLayer: 3
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7915541095283254415, guid: 27fd3eac47b73a844a857662ae832941, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -908,7 +923,9 @@ MonoBehaviour:
   lightWorld: {fileID: 2015806150}
   darkWorld: {fileID: 1766926912}
   betweenWorlds: {fileID: 4282578}
-  offset: 0
+  vfxSpawnPoint: {fileID: 1945194919}
+  wandVFX: {fileID: 958076137226389487, guid: 16433c6120b82994dbda994c2fafd5b0, type: 3}
+  heldGameObject: {fileID: 0}
 --- !u!1 &619460971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1647,36 @@ Transform:
   - {fileID: 1970893835}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1945194918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1945194919}
+  m_Layer: 0
+  m_Name: VFXSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1945194919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945194918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.316, y: -0.002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 592501549}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1970893835 stripped
 Transform:
