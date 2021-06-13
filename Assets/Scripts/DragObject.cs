@@ -48,6 +48,8 @@ public class DragObject : MonoBehaviour
             startPosy = mousePos.y - this.transform.localPosition.y;
             isPickedUp = true;
             myCollider.enabled = false;
+
+            CheckIfBomb();
         }
     }
 
@@ -60,5 +62,11 @@ public class DragObject : MonoBehaviour
         rb.velocity = new Vector2(0f, 0f);
         myCollider.enabled = true;
         isPickedUp = false;
+    }
+
+    private void CheckIfBomb() {
+        if (!gameObject.GetComponent<Bomb>()) { return; }
+
+        gameObject.GetComponent<Bomb>().StartBombTimer();
     }
 }

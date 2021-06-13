@@ -46,4 +46,7 @@ public class MagicWand : MonoBehaviour
         Destroy(wandEffect);
     }
 
+    public void DestroyWandEffect() {
+        Destroy(wandEffect);
+    }
 }
