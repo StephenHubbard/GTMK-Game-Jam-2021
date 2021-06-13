@@ -3712,6 +3712,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3308703474700601790, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_text
+      value: You Win! Thanks For Playing!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196601, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 386.82593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 199.47626
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000038146973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196998, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308703474745196999, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3308703475926690619, guid: 36d9e10da6ab619468b17573d1907ab3, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -21,6 +21,11 @@ public class MusicManager : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (FindObjectsOfType<MusicManager>().Length > 1) {
+            Destroy(gameObject);
+        }
+        else {
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
