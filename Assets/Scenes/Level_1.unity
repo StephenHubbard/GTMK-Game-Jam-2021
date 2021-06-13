@@ -1305,7 +1305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &868566959
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1322,8 +1322,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.199997, y: 3.4000015}
-  m_SizeDelta: {x: -56.752167, y: -62.087723}
+  m_AnchoredPosition: {x: 1.7879944, y: 3.4000015}
+  m_SizeDelta: {x: -55.57605, y: -62.087723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &868566960
 MonoBehaviour:
@@ -1345,8 +1345,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Woweee! Lastly, left click and hold on certain objects to move them in
-    between dimensions. Good Luck!
+  m_text: Woweee! Lastly, LEFT CLICK and hold on highlighted objects to move them
+    in between dimensions. Good Luck!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1786,8 +1786,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.199997, y: 3.4000015}
-  m_SizeDelta: {x: -56.752167, y: -62.087723}
+  m_AnchoredPosition: {x: -19.53, y: 3.4000015}
+  m_SizeDelta: {x: -98.20465, y: -62.087723}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1416958446
 MonoBehaviour:
@@ -1809,7 +1809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nice!  You can toggle between dimensions with simple right click.  Give
+  m_text: 'Nice!  You can toggle between dimensions with a simple RIGHT CLICK.  Give
     it a try! '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1904,7 +1904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1539207115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to ''Between Two Worlds''!  Use WASD to move and Space to Jump.  '
+  m_text: 'Welcome to ''Between Two Worlds''!  Use WASD to move and SPACE to jump.  '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
