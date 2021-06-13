@@ -2413,10 +2413,6 @@ PrefabInstance:
       propertyPath: lightWorld
       value: 
       objectReference: {fileID: 2015806150}
-    - target: {fileID: 2999355994127161577, guid: 740343b4b0637bf44a29f9765e2540b0, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 740343b4b0637bf44a29f9765e2540b0, type: 3}
 --- !u!1001 &1320469450

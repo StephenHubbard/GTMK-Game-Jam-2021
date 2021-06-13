@@ -10,6 +10,8 @@ public class MagicWand : MonoBehaviour
     [SerializeField] private Transform vfxSpawnPoint;
     [SerializeField] private GameObject wandVFX;
 
+    [SerializeField] private AudioSource wandSFX;
+
     public GameObject heldGameObject;
     private CharacterController2D characterController2D;
 
@@ -32,6 +34,12 @@ public class MagicWand : MonoBehaviour
             var particleShape = wandEffect.GetComponent<ParticleSystem>().shape;
             particleShape.alignToDirection = true;
         }
+
+        WandSound();
+    }
+
+    private void WandSound() {
+        wandSFX.Play();
     }
 
     public void WandRelease() {
@@ -42,11 +50,13 @@ public class MagicWand : MonoBehaviour
             heldGameObject.transform.parent = darkWorld.transform;
         }
 
+        wandSFX.Stop();
         heldGameObject = null;
         Destroy(wandEffect);
     }
 
     public void DestroyWandEffect() {
+        wandSFX.Stop();
         Destroy(wandEffect);
     }
 }
